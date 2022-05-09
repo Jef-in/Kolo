@@ -5,42 +5,118 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Characters-->
+        <!--Comics-->
         <scene sceneID="vab-pm-3jZ">
             <objects>
-                <viewController id="UKV-Ur-aeR" sceneMemberID="viewController">
+                <viewController id="UKV-Ur-aeR" customClass="ComicsTabViewController" customModule="KoloApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="win-VR-IL3">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="ovq-Ie-AiE"/>
-                        <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Characters" image="person" catalog="system" id="ONG-Kl-1PS"/>
+                    <tabBarItem key="tabBarItem" title="Comics" image="person" catalog="system" id="ONG-Kl-1PS"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="v5K-Qk-F84" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="330" y="108"/>
         </scene>
-        <!--Comics-->
+        <!--Characters-->
         <scene sceneID="owW-jg-FaL">
             <objects>
-                <viewController id="beu-qt-vTL" sceneMemberID="viewController">
+                <viewController id="beu-qt-vTL" customClass="CharactersTabViewController" customModule="KoloApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Co0-Xg-nv2">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" searchBarStyle="minimal" translatesAutoresizingMaskIntoConstraints="NO" id="1VW-8K-1ad">
+                                <rect key="frame" x="10" y="64" width="394" height="51"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="alphabet" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
+                            </searchBar>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="af2-t7-EL4">
+                                <rect key="frame" x="20" y="125" width="374" height="678"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="boi-XG-m6f">
+                                    <size key="itemSize" width="173" height="232"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CharacterCollectionViewCell" id="bjS-En-FIz" customClass="CharacterCollectionViewCell" customModule="KoloApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="173" height="232"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Ex3-2h-L3D">
+                                            <rect key="frame" x="0.0" y="0.0" width="173" height="232"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Strange" translatesAutoresizingMaskIntoConstraints="NO" id="7WJ-k0-BB7">
+                                                    <rect key="frame" x="0.0" y="0.0" width="173" height="232"/>
+                                                </imageView>
+                                                <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LNW-Wy-Fi7">
+                                                    <rect key="frame" x="0.0" y="192" width="173" height="40"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="40" id="GcX-3P-vBt"/>
+                                                    </constraints>
+                                                </view>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DOCTOR STRANGE" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SXS-mA-m72">
+                                                    <rect key="frame" x="29.5" y="204.5" width="114" height="15"/>
+                                                    <fontDescription key="fontDescription" name="GeezaPro" family="Geeza Pro" pointSize="12"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="7WJ-k0-BB7" secondAttribute="trailing" id="0mf-Hw-0bs"/>
+                                                <constraint firstItem="SXS-mA-m72" firstAttribute="centerY" secondItem="LNW-Wy-Fi7" secondAttribute="centerY" id="4UZ-cK-bbs"/>
+                                                <constraint firstItem="7WJ-k0-BB7" firstAttribute="leading" secondItem="Ex3-2h-L3D" secondAttribute="leading" id="I9V-dx-lh7"/>
+                                                <constraint firstItem="7WJ-k0-BB7" firstAttribute="top" secondItem="Ex3-2h-L3D" secondAttribute="top" id="NqZ-g3-m0L"/>
+                                                <constraint firstAttribute="trailing" secondItem="LNW-Wy-Fi7" secondAttribute="trailing" id="b7q-UE-RYs"/>
+                                                <constraint firstItem="SXS-mA-m72" firstAttribute="centerX" secondItem="LNW-Wy-Fi7" secondAttribute="centerX" id="c98-yv-2UU"/>
+                                                <constraint firstItem="LNW-Wy-Fi7" firstAttribute="leading" secondItem="Ex3-2h-L3D" secondAttribute="leading" id="dcs-hB-9f4"/>
+                                                <constraint firstAttribute="bottom" secondItem="LNW-Wy-Fi7" secondAttribute="bottom" id="shf-bn-Goj"/>
+                                                <constraint firstAttribute="bottom" secondItem="7WJ-k0-BB7" secondAttribute="bottom" id="yE7-uG-sx2"/>
+                                            </constraints>
+                                        </collectionViewCellContentView>
+                                        <size key="customSize" width="173" height="232"/>
+                                        <connections>
+                                            <outlet property="characterImageView" destination="7WJ-k0-BB7" id="7VT-zf-x3C"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="beu-qt-vTL" id="Ojo-ZN-fF8"/>
+                                    <outlet property="delegate" destination="beu-qt-vTL" id="3Ao-1A-qAF"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="k1p-fr-x5t"/>
-                        <color key="backgroundColor" systemColor="systemRedColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="k1p-fr-x5t" firstAttribute="trailing" secondItem="1VW-8K-1ad" secondAttribute="trailing" constant="10" id="14A-3l-fIQ"/>
+                            <constraint firstItem="1VW-8K-1ad" firstAttribute="leading" secondItem="k1p-fr-x5t" secondAttribute="leading" constant="10" id="J0u-7c-22e"/>
+                            <constraint firstItem="k1p-fr-x5t" firstAttribute="bottom" secondItem="af2-t7-EL4" secondAttribute="bottom" constant="10" id="L7s-zL-RPI"/>
+                            <constraint firstItem="1VW-8K-1ad" firstAttribute="top" secondItem="k1p-fr-x5t" secondAttribute="top" constant="20" id="Nvv-lf-C3e"/>
+                            <constraint firstItem="k1p-fr-x5t" firstAttribute="trailing" secondItem="af2-t7-EL4" secondAttribute="trailing" constant="20" id="TlU-Ul-rAF"/>
+                            <constraint firstItem="af2-t7-EL4" firstAttribute="leading" secondItem="k1p-fr-x5t" secondAttribute="leading" constant="20" id="b5r-9b-ra1"/>
+                            <constraint firstItem="af2-t7-EL4" firstAttribute="top" secondItem="1VW-8K-1ad" secondAttribute="bottom" constant="10" id="zlN-st-a3s"/>
+                        </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Comics" image="person.fill" catalog="system" id="iPh-UB-8wu">
+                    <tabBarItem key="tabBarItem" title="Characters" image="person.fill" catalog="system" id="iPh-UB-8wu">
                         <color key="badgeColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBarItem>
+                    <connections>
+                        <outlet property="charactersCollectionView" destination="af2-t7-EL4" id="4ET-sI-QjB"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yba-lB-iE4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="393" y="929"/>
+            <point key="canvasLocation" x="392.75362318840581" y="928.79464285714278"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="5wn-h6-wNf">
@@ -62,14 +138,12 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Strange" width="540" height="614"/>
         <image name="doc.text" catalog="system" width="115" height="128"/>
         <image name="person" catalog="system" width="128" height="117"/>
         <image name="person.fill" catalog="system" width="128" height="120"/>
-        <systemColor name="systemPurpleColor">
-            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemRedColor">
-            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
     </resources>
 </document>
