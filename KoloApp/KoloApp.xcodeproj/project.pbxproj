@@ -1,0 +1,609 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A1E4D3862829919B00E749C4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E4D3852829919B00E749C4 /* AppDelegate.swift */; };
+		A1E4D3882829919B00E749C4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E4D3872829919B00E749C4 /* SceneDelegate.swift */; };
+		A1E4D38A2829919B00E749C4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E4D3892829919B00E749C4 /* ViewController.swift */; };
+		A1E4D38D2829919B00E749C4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1E4D38B2829919B00E749C4 /* Main.storyboard */; };
+		A1E4D38F2829919B00E749C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1E4D38E2829919B00E749C4 /* Assets.xcassets */; };
+		A1E4D3922829919B00E749C4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1E4D3902829919B00E749C4 /* LaunchScreen.storyboard */; };
+		A1E4D39D2829919B00E749C4 /* KoloAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E4D39C2829919B00E749C4 /* KoloAppTests.swift */; };
+		A1E4D3A72829919B00E749C4 /* KoloAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E4D3A62829919B00E749C4 /* KoloAppUITests.swift */; };
+		A1E4D3A92829919B00E749C4 /* KoloAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E4D3A82829919B00E749C4 /* KoloAppUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A1E4D3992829919B00E749C4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A1E4D37A2829919B00E749C4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A1E4D3812829919B00E749C4;
+			remoteInfo = KoloApp;
+		};
+		A1E4D3A32829919B00E749C4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A1E4D37A2829919B00E749C4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A1E4D3812829919B00E749C4;
+			remoteInfo = KoloApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A1E4D3822829919B00E749C4 /* KoloApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KoloApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1E4D3852829919B00E749C4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A1E4D3872829919B00E749C4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		A1E4D3892829919B00E749C4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A1E4D38C2829919B00E749C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A1E4D38E2829919B00E749C4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A1E4D3912829919B00E749C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A1E4D3932829919B00E749C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A1E4D3982829919B00E749C4 /* KoloAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KoloAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1E4D39C2829919B00E749C4 /* KoloAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KoloAppTests.swift; sourceTree = "<group>"; };
+		A1E4D3A22829919B00E749C4 /* KoloAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KoloAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1E4D3A62829919B00E749C4 /* KoloAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KoloAppUITests.swift; sourceTree = "<group>"; };
+		A1E4D3A82829919B00E749C4 /* KoloAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KoloAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A1E4D37F2829919B00E749C4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1E4D3952829919B00E749C4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1E4D39F2829919B00E749C4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A1E4D3792829919B00E749C4 = {
+			isa = PBXGroup;
+			children = (
+				A1E4D3842829919B00E749C4 /* KoloApp */,
+				A1E4D39B2829919B00E749C4 /* KoloAppTests */,
+				A1E4D3A52829919B00E749C4 /* KoloAppUITests */,
+				A1E4D3832829919B00E749C4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A1E4D3832829919B00E749C4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A1E4D3822829919B00E749C4 /* KoloApp.app */,
+				A1E4D3982829919B00E749C4 /* KoloAppTests.xctest */,
+				A1E4D3A22829919B00E749C4 /* KoloAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A1E4D3842829919B00E749C4 /* KoloApp */ = {
+			isa = PBXGroup;
+			children = (
+				A1E4D3852829919B00E749C4 /* AppDelegate.swift */,
+				A1E4D3872829919B00E749C4 /* SceneDelegate.swift */,
+				A1E4D3892829919B00E749C4 /* ViewController.swift */,
+				A1E4D38B2829919B00E749C4 /* Main.storyboard */,
+				A1E4D38E2829919B00E749C4 /* Assets.xcassets */,
+				A1E4D3902829919B00E749C4 /* LaunchScreen.storyboard */,
+				A1E4D3932829919B00E749C4 /* Info.plist */,
+			);
+			path = KoloApp;
+			sourceTree = "<group>";
+		};
+		A1E4D39B2829919B00E749C4 /* KoloAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				A1E4D39C2829919B00E749C4 /* KoloAppTests.swift */,
+			);
+			path = KoloAppTests;
+			sourceTree = "<group>";
+		};
+		A1E4D3A52829919B00E749C4 /* KoloAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A1E4D3A62829919B00E749C4 /* KoloAppUITests.swift */,
+				A1E4D3A82829919B00E749C4 /* KoloAppUITestsLaunchTests.swift */,
+			);
+			path = KoloAppUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A1E4D3812829919B00E749C4 /* KoloApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A1E4D3AC2829919B00E749C4 /* Build configuration list for PBXNativeTarget "KoloApp" */;
+			buildPhases = (
+				A1E4D37E2829919B00E749C4 /* Sources */,
+				A1E4D37F2829919B00E749C4 /* Frameworks */,
+				A1E4D3802829919B00E749C4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KoloApp;
+			productName = KoloApp;
+			productReference = A1E4D3822829919B00E749C4 /* KoloApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A1E4D3972829919B00E749C4 /* KoloAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A1E4D3AF2829919B00E749C4 /* Build configuration list for PBXNativeTarget "KoloAppTests" */;
+			buildPhases = (
+				A1E4D3942829919B00E749C4 /* Sources */,
+				A1E4D3952829919B00E749C4 /* Frameworks */,
+				A1E4D3962829919B00E749C4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A1E4D39A2829919B00E749C4 /* PBXTargetDependency */,
+			);
+			name = KoloAppTests;
+			productName = KoloAppTests;
+			productReference = A1E4D3982829919B00E749C4 /* KoloAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A1E4D3A12829919B00E749C4 /* KoloAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A1E4D3B22829919B00E749C4 /* Build configuration list for PBXNativeTarget "KoloAppUITests" */;
+			buildPhases = (
+				A1E4D39E2829919B00E749C4 /* Sources */,
+				A1E4D39F2829919B00E749C4 /* Frameworks */,
+				A1E4D3A02829919B00E749C4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A1E4D3A42829919B00E749C4 /* PBXTargetDependency */,
+			);
+			name = KoloAppUITests;
+			productName = KoloAppUITests;
+			productReference = A1E4D3A22829919B00E749C4 /* KoloAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A1E4D37A2829919B00E749C4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					A1E4D3812829919B00E749C4 = {
+						CreatedOnToolsVersion = 13.2;
+					};
+					A1E4D3972829919B00E749C4 = {
+						CreatedOnToolsVersion = 13.2;
+						TestTargetID = A1E4D3812829919B00E749C4;
+					};
+					A1E4D3A12829919B00E749C4 = {
+						CreatedOnToolsVersion = 13.2;
+						TestTargetID = A1E4D3812829919B00E749C4;
+					};
+				};
+			};
+			buildConfigurationList = A1E4D37D2829919B00E749C4 /* Build configuration list for PBXProject "KoloApp" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A1E4D3792829919B00E749C4;
+			productRefGroup = A1E4D3832829919B00E749C4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A1E4D3812829919B00E749C4 /* KoloApp */,
+				A1E4D3972829919B00E749C4 /* KoloAppTests */,
+				A1E4D3A12829919B00E749C4 /* KoloAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A1E4D3802829919B00E749C4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1E4D3922829919B00E749C4 /* LaunchScreen.storyboard in Resources */,
+				A1E4D38F2829919B00E749C4 /* Assets.xcassets in Resources */,
+				A1E4D38D2829919B00E749C4 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1E4D3962829919B00E749C4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1E4D3A02829919B00E749C4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A1E4D37E2829919B00E749C4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1E4D38A2829919B00E749C4 /* ViewController.swift in Sources */,
+				A1E4D3862829919B00E749C4 /* AppDelegate.swift in Sources */,
+				A1E4D3882829919B00E749C4 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1E4D3942829919B00E749C4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1E4D39D2829919B00E749C4 /* KoloAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1E4D39E2829919B00E749C4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1E4D3A72829919B00E749C4 /* KoloAppUITests.swift in Sources */,
+				A1E4D3A92829919B00E749C4 /* KoloAppUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A1E4D39A2829919B00E749C4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A1E4D3812829919B00E749C4 /* KoloApp */;
+			targetProxy = A1E4D3992829919B00E749C4 /* PBXContainerItemProxy */;
+		};
+		A1E4D3A42829919B00E749C4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A1E4D3812829919B00E749C4 /* KoloApp */;
+			targetProxy = A1E4D3A32829919B00E749C4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A1E4D38B2829919B00E749C4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A1E4D38C2829919B00E749C4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A1E4D3902829919B00E749C4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A1E4D3912829919B00E749C4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A1E4D3AA2829919B00E749C4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A1E4D3AB2829919B00E749C4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A1E4D3AD2829919B00E749C4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = E6WV5AAPA8;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = KoloApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.algo.KoloApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A1E4D3AE2829919B00E749C4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = E6WV5AAPA8;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = KoloApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.algo.KoloApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A1E4D3B02829919B00E749C4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = E6WV5AAPA8;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.algo.KoloAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KoloApp.app/KoloApp";
+			};
+			name = Debug;
+		};
+		A1E4D3B12829919B00E749C4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = E6WV5AAPA8;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.algo.KoloAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KoloApp.app/KoloApp";
+			};
+			name = Release;
+		};
+		A1E4D3B32829919B00E749C4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = E6WV5AAPA8;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.algo.KoloAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = KoloApp;
+			};
+			name = Debug;
+		};
+		A1E4D3B42829919B00E749C4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = E6WV5AAPA8;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.algo.KoloAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = KoloApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A1E4D37D2829919B00E749C4 /* Build configuration list for PBXProject "KoloApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1E4D3AA2829919B00E749C4 /* Debug */,
+				A1E4D3AB2829919B00E749C4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A1E4D3AC2829919B00E749C4 /* Build configuration list for PBXNativeTarget "KoloApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1E4D3AD2829919B00E749C4 /* Debug */,
+				A1E4D3AE2829919B00E749C4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A1E4D3AF2829919B00E749C4 /* Build configuration list for PBXNativeTarget "KoloAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1E4D3B02829919B00E749C4 /* Debug */,
+				A1E4D3B12829919B00E749C4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A1E4D3B22829919B00E749C4 /* Build configuration list for PBXNativeTarget "KoloAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1E4D3B32829919B00E749C4 /* Debug */,
+				A1E4D3B42829919B00E749C4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A1E4D37A2829919B00E749C4 /* Project object */;
+}
