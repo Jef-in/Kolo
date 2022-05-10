@@ -5,4 +5,10 @@
 //  Created by Jefin on 10/05/22.
 //
 
-import Foundation
+import UIKit
+
+class CharacterCollectionViewCell: UICollectionViewCell {
+    
+    @IBOutlet weak var characterImageView: UIImageView!
+    
+}
