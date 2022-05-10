@@ -86,6 +86,7 @@
                                         <size key="customSize" width="173" height="232"/>
                                         <connections>
                                             <outlet property="characterImageView" destination="7WJ-k0-BB7" id="7VT-zf-x3C"/>
+                                            <outlet property="characterNameLabel" destination="SXS-mA-m72" id="QKA-uv-If1"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
