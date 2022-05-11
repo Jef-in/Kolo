@@ -43,6 +43,7 @@ class CharactersTabViewController: UIViewController {
             }
         }).store(in: &subscriptions)
     }
+    
 }
 
 extension CharactersTabViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
@@ -52,8 +53,10 @@ extension CharactersTabViewController: UICollectionViewDelegate, UICollectionVie
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let character = characterDataSource[indexPath.row]
+        let cacheItem = NSNumber(value: indexPath.row)
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CharacterCollectionViewCell", for: indexPath) as! CharacterCollectionViewCell
-        cell.characterNameLabel.text = character.name
+        cell.prepareForReuse()
+        cell.configureCell(character: character, cacheItem: cacheItem)
         return cell
     }
     

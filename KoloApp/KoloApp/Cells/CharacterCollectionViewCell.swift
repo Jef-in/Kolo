@@ -12,4 +12,16 @@ class CharacterCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var characterImageView: UIImageView!
     
     @IBOutlet weak var characterNameLabel: UILabel!
+    
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        characterImageView.image = nil
+    }
+    
+    func configureCell(character: CharacterResults, cacheItem: NSNumber) {
+        DispatchQueue.main.async {
+            self.characterNameLabel.text = character.name
+            self.characterImageView.getCachedImage(cacheItem: cacheItem, path: character.thumbnail?.path ?? "", imageExtension: character.thumbnail?.extension ?? "")
+        }
+    }
 }

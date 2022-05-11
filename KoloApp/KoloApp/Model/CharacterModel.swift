@@ -27,10 +27,5 @@ public class CharacterResults: Codable {
 }
 public class Thumbnail: Codable {
     let path: String?
-    let Extension: String?
-    
-    public enum Thumbnail: String, CodingKey {
-        case path = "path"
-        case Extension = "extension"
-    }
+    let `extension`: String?
 }

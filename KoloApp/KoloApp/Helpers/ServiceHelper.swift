@@ -10,13 +10,17 @@ import Foundation
 
 class ServiceHelper {
     static let shared = ServiceHelper()
-    func getBaseURL(path: String, ts: String) -> String {
+    func getURL(path: String, ts: String) -> String {
         let hashString = ts + KoloConstants.privateApiKey + KoloConstants.publicApiKey
         let md5HashString = hashString.MD5
         let urlString = KoloConstants.baseURL + path + "?ts=\(ts)&apikey=\(KoloConstants.publicApiKey)&hash=\(md5HashString)"
         return urlString
     }
  
+    func configureImageURL(path: String, imageExtension: String) -> String {
+        let imageUrlString = path + "/portrait_xlarge." + imageExtension
+        return imageUrlString
+    }
 }
 
 extension String {
