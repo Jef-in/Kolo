@@ -18,10 +18,10 @@ class CharacterCollectionViewCell: UICollectionViewCell {
         characterImageView.image = nil
     }
     
-    func configureCell(character: CharacterResults, cacheItem: NSNumber) {
+    func configureCell(name: String, cacheItem: NSNumber, path: String, imageExtension: String) {
         DispatchQueue.main.async {
-            self.characterNameLabel.text = character.name
-            self.characterImageView.getCachedImage(cacheItem: cacheItem, path: character.thumbnail?.path ?? "", imageExtension: character.thumbnail?.extension ?? "")
+            self.characterNameLabel.text = name
+            self.characterImageView.getCachedImage(cacheItem: cacheItem, path: path,  imageExtension: imageExtension)
         }
     }
 }
