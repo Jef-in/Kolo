@@ -11,10 +11,12 @@ import UIKit
 
 public protocol MarvelServiceable {
     func getCharacters() -> AnyPublisher<CharacterModel, Error>
+    func getComics() -> AnyPublisher<ComicModel, Error>
     func getImage(path: String, imageExtension: String) -> AnyPublisher<UIImage, URLError>
 }
 
 class MarvelService: MarvelServiceable {
+
     func getCharacters() -> AnyPublisher<CharacterModel, Error> {
         let path = "/v1/public/characters"
         guard let Url = URL(string: ServiceHelper.shared.getURL(path: path, ts: "1")) else { preconditionFailure("failed to fetch the url")
@@ -25,6 +27,19 @@ class MarvelService: MarvelServiceable {
         return URLSession.shared.dataTaskPublisher(for: request)
             .map(\.data)
             .decode(type: CharacterModel.self, decoder: JSONDecoder())
+            .eraseToAnyPublisher()
+    }
+    
+    func getComics() -> AnyPublisher<ComicModel, Error> {
+        let path = "/v1/public/comics"
+        
+        guard let Url = URL(string: ServiceHelper.shared.getURL(path: path, ts: "1")) else { preconditionFailure("failed to fetch the url") }
+        
+        let request = URLRequest(url: Url)
+        
+        return URLSession.shared.dataTaskPublisher(for: request)
+            .map(\.data)
+            .decode(type: ComicModel.self, decoder: JSONDecoder())
             .eraseToAnyPublisher()
     }
     

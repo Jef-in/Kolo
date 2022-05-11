@@ -5,7 +5,7 @@
 //  Created by Jefin on 10/05/22.
 //
 
-public class CharacterModel : Codable {
+public class CharacterModel: Codable {
     let code: Int?
     let status: String?
     let data: Data?
