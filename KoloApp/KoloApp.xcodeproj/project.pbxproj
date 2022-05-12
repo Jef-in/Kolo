@@ -10,6 +10,8 @@
 		A1064894282BDAC20082A109 /* ComicModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1064893282BDAC20082A109 /* ComicModel.swift */; };
 		A1064896282BE0770082A109 /* ComicViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1064895282BE0770082A109 /* ComicViewModel.swift */; };
 		A1064898282C1C700082A109 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1064897282C1C700082A109 /* NetworkManager.swift */; };
+		A145B150282D0EED00DDDB76 /* FilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A145B14F282D0EED00DDDB76 /* FilterViewController.swift */; };
+		A145B152282D18AD00DDDB76 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A145B151282D18AD00DDDB76 /* String+Extension.swift */; };
 		A162A657282AD691003D455B /* ServiceHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A162A656282AD691003D455B /* ServiceHelper.swift */; };
 		A162A659282AF615003D455B /* CharacterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A162A658282AF615003D455B /* CharacterViewModel.swift */; };
 		A162A65B282B095F003D455B /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A162A65A282B095F003D455B /* UIImage+Extension.swift */; };
@@ -50,6 +52,8 @@
 		A1064893282BDAC20082A109 /* ComicModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComicModel.swift; sourceTree = "<group>"; };
 		A1064895282BE0770082A109 /* ComicViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComicViewModel.swift; sourceTree = "<group>"; };
 		A1064897282C1C700082A109 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		A145B14F282D0EED00DDDB76 /* FilterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterViewController.swift; sourceTree = "<group>"; };
+		A145B151282D18AD00DDDB76 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 		A162A656282AD691003D455B /* ServiceHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceHelper.swift; sourceTree = "<group>"; };
 		A162A658282AF615003D455B /* CharacterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterViewModel.swift; sourceTree = "<group>"; };
 		A162A65A282B095F003D455B /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
@@ -159,6 +163,7 @@
 			children = (
 				A1E4D3BA282996CF00E749C4 /* CharactersTabViewController.swift */,
 				A1E4D3BC282996E400E749C4 /* ComicsTabViewController.swift */,
+				A145B14F282D0EED00DDDB76 /* FilterViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -196,6 +201,7 @@
 				A162A656282AD691003D455B /* ServiceHelper.swift */,
 				A162A65A282B095F003D455B /* UIImage+Extension.swift */,
 				A1064897282C1C700082A109 /* NetworkManager.swift */,
+				A145B151282D18AD00DDDB76 /* String+Extension.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -339,6 +345,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A145B152282D18AD00DDDB76 /* String+Extension.swift in Sources */,
 				A1E4D3C028299EEC00E749C4 /* CharacterCollectionViewCell.swift in Sources */,
 				A1E4D3BD282996E400E749C4 /* ComicsTabViewController.swift in Sources */,
 				A1E4D3BB282996CF00E749C4 /* CharactersTabViewController.swift in Sources */,
@@ -348,6 +355,7 @@
 				A162A659282AF615003D455B /* CharacterViewModel.swift in Sources */,
 				A1E4D3C82829A8C000E749C4 /* CharacterModel.swift in Sources */,
 				A1064896282BE0770082A109 /* ComicViewModel.swift in Sources */,
+				A145B150282D0EED00DDDB76 /* FilterViewController.swift in Sources */,
 				A1E4D3882829919B00E749C4 /* SceneDelegate.swift in Sources */,
 				A1064898282C1C700082A109 /* NetworkManager.swift in Sources */,
 				A162A65B282B095F003D455B /* UIImage+Extension.swift in Sources */,

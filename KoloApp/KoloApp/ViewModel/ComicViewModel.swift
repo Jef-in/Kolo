@@ -15,13 +15,14 @@ class ComicViewModel: ComicViewable {
     
     private let marvelService: MarvelService
     var subscriptions = Set<AnyCancellable>()
+    var filterType = ""
     
     init(marvelService: MarvelService) {
         self.marvelService = marvelService
     }
     
     func getComics() -> AnyPublisher<[ComicResults]?, Error> {
-        marvelService.getComics()
+        marvelService.getComics(filterType: filterType)
             .map(\.data?.results)
             .eraseToAnyPublisher()
     }

@@ -30,6 +30,7 @@ class ComicsTabViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+       
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -57,6 +58,20 @@ class ComicsTabViewController: UIViewController {
                 self.comicsCollectionView.reloadData()
             }
         }).store(in: &subscriptions)
+    }
+    
+    @IBAction func filterButtonPressed(_ sender: Any) {
+        let storyBoard = UIStoryboard(name: "Main", bundle: nil)
+        let controller = storyBoard.instantiateViewController(withIdentifier: "FilterViewController") as! FilterViewController
+        controller.delegate = self
+        self.navigationController?.pushViewController(controller, animated: true)
+    }
+}
+
+extension ComicsTabViewController: filterComicsProtocol {
+    func loadComicsWithFilter(type: String) {
+        viewModel.filterType = type
+        loadComics()
     }
 }
 

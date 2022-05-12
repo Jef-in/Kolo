@@ -47,9 +47,12 @@
                                         </constraints>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain"/>
+                                        <connections>
+                                            <action selector="filterButtonPressed:" destination="UKV-Ur-aeR" eventType="touchUpInside" id="8p0-MB-9vx"/>
+                                        </connections>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="qYJ-aU-ULz" firstAttribute="centerY" secondItem="X1C-7N-Myg" secondAttribute="centerY" id="RgS-0w-uRl"/>
                                     <constraint firstItem="qYJ-aU-ULz" firstAttribute="centerX" secondItem="X1C-7N-Myg" secondAttribute="centerX" id="Uql-l2-VGb"/>
@@ -63,7 +66,7 @@
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="sx8-R2-wnh">
                                 <rect key="frame" x="0.0" y="138" width="414" height="675"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="wpz-nJ-6z9">
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="wpz-nJ-6z9">
                                     <size key="itemSize" width="128" height="128"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
@@ -87,8 +90,8 @@
                                                         <constraint firstAttribute="height" constant="40" id="2Hl-a2-i4j"/>
                                                     </constraints>
                                                 </view>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DOCTOR STRANGE" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sh8-Rl-0y1">
-                                                    <rect key="frame" x="29.5" y="204.5" width="114" height="15"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DOCTOR STRANGE" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sh8-Rl-0y1">
+                                                    <rect key="frame" x="10" y="204.5" width="153" height="15"/>
                                                     <fontDescription key="fontDescription" name="GeezaPro" family="Geeza Pro" pointSize="12"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
@@ -96,10 +99,11 @@
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="oDU-QN-VoS" firstAttribute="top" secondItem="BSS-kV-J0l" secondAttribute="top" id="39M-yW-Z8Y"/>
-                                                <constraint firstItem="Sh8-Rl-0y1" firstAttribute="centerX" secondItem="srH-zv-hc6" secondAttribute="centerX" id="4SF-Fe-Q6L"/>
                                                 <constraint firstItem="Sh8-Rl-0y1" firstAttribute="centerY" secondItem="srH-zv-hc6" secondAttribute="centerY" id="CGl-Nt-3C6"/>
                                                 <constraint firstAttribute="bottom" secondItem="srH-zv-hc6" secondAttribute="bottom" id="DOQ-ce-Irj"/>
                                                 <constraint firstAttribute="trailing" secondItem="oDU-QN-VoS" secondAttribute="trailing" id="Maj-FG-yLp"/>
+                                                <constraint firstAttribute="trailing" secondItem="Sh8-Rl-0y1" secondAttribute="trailing" constant="10" id="OkZ-qh-ULD"/>
+                                                <constraint firstItem="Sh8-Rl-0y1" firstAttribute="leading" secondItem="BSS-kV-J0l" secondAttribute="leading" constant="10" id="Q6p-AA-3TA"/>
                                                 <constraint firstItem="srH-zv-hc6" firstAttribute="leading" secondItem="BSS-kV-J0l" secondAttribute="leading" id="UI8-nw-v3b"/>
                                                 <constraint firstAttribute="trailing" secondItem="srH-zv-hc6" secondAttribute="trailing" id="awq-ce-bW2"/>
                                                 <constraint firstAttribute="bottom" secondItem="oDU-QN-VoS" secondAttribute="bottom" id="fgf-Nt-WCj"/>
@@ -139,6 +143,34 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="v5K-Qk-F84" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="330" y="108"/>
+        </scene>
+        <!--Filter View Controller-->
+        <scene sceneID="mju-Wm-dTC">
+            <objects>
+                <tableViewController storyboardIdentifier="FilterViewController" id="6nL-ON-rUj" customClass="FilterViewController" customModule="KoloApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="awT-pP-hbh">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="QbB-Jr-IPR">
+                                <rect key="frame" x="0.0" y="44.5" width="414" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="QbB-Jr-IPR" id="F8A-RF-97v">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="6nL-ON-rUj" id="ngo-a2-IRJ"/>
+                            <outlet property="delegate" destination="6nL-ON-rUj" id="mrQ-sP-LKv"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2nS-ZR-59r" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1181" y="103"/>
         </scene>
         <!--Characters-->
         <scene sceneID="owW-jg-FaL">

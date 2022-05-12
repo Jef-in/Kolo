@@ -11,7 +11,7 @@ import UIKit
 
 public protocol MarvelServiceable {
     func getCharacters() -> AnyPublisher<CharacterModel, Error>
-    func getComics() -> AnyPublisher<ComicModel, Error>
+    func getComics(filterType: String) -> AnyPublisher<ComicModel, Error>
     func getImage(path: String, imageExtension: String) -> AnyPublisher<UIImage, URLError>
 }
 
@@ -30,10 +30,14 @@ class MarvelService: MarvelServiceable {
             .eraseToAnyPublisher()
     }
     
-    func getComics() -> AnyPublisher<ComicModel, Error> {
+    func getComics(filterType: String) -> AnyPublisher<ComicModel, Error> {
         let path = "/v1/public/comics"
         
-        guard let Url = URL(string: ServiceHelper.shared.getURL(path: path, ts: "1")) else { preconditionFailure("failed to fetch the url") }
+        var urlString = ServiceHelper.shared.getURL(path: path, ts: "1")
+        if filterType != "" {
+            urlString += "&dateDescriptor=\(filterType)"
+        }
+        guard let Url = URL(string: urlString) else { preconditionFailure("failed to fetch the url") }
         
         let request = URLRequest(url: Url)
         
