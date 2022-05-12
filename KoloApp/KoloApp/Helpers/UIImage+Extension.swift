@@ -7,9 +7,6 @@
 
 import UIKit
 
-private let cache = NSCache<NSNumber, UIImage>()
-private let utilityQueue = DispatchQueue.global(qos: .utility)
-
 extension UIImageView {
     func getCachedImage(cacheItem: NSNumber, path: String, imageExtension: String) {
         let cache = NSCache<NSNumber, UIImage>()

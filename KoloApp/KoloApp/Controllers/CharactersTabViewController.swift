@@ -15,6 +15,7 @@ class CharactersTabViewController: UIViewController {
     private let networkManger: NetworkManager
     var subscriptions = Set<AnyCancellable>()
     var characterDataSource = [CharacterResults]()
+    @IBOutlet weak var searchBar: UISearchBar!
     
     init(viewModel: CharacterViewModel,
          networkManager: NetworkManager) {
@@ -30,6 +31,7 @@ class CharactersTabViewController: UIViewController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
+        searchBar.delegate = self
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -60,6 +62,29 @@ class CharactersTabViewController: UIViewController {
         }).store(in: &subscriptions)
     }
     
+    func searchCharacters(searchString: String) {
+        if searchString.replacingOccurrences(of: " ", with: "") != "" {
+            var filteredDataSource = [CharacterResults]()
+            characterDataSource.map { character in
+                guard let name = character.name else { return }
+                if name.contains(searchString) {
+                    filteredDataSource.append(character)
+                }
+            }
+            characterDataSource = filteredDataSource
+            DispatchQueue.main.async {
+                self.charactersCollectionView.reloadData()
+            }
+        } else {
+            loadCharacters()
+        }
+    }
+}
+
+extension CharactersTabViewController: UISearchBarDelegate {
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        searchCharacters(searchString: searchText)
+    }
 }
 
 extension CharactersTabViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {

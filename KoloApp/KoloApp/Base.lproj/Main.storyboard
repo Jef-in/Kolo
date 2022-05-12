@@ -260,6 +260,7 @@
                     </tabBarItem>
                     <connections>
                         <outlet property="charactersCollectionView" destination="af2-t7-EL4" id="4ET-sI-QjB"/>
+                        <outlet property="searchBar" destination="1VW-8K-1ad" id="WWo-pH-Dqu"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yba-lB-iE4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
